@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faceexppression</title>
+    <style>
+        .maindivision {
+            margin: auto;
+            height: 200px;
+            width: 500px;
+            border: 2px solid gray;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        button {
+            height: 40px;
+            width: 150px;
+            margin-top: 40px;
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="maindivision">
+        <img src=" " id="output" alt="">
+        <div>
+            <button type="button" onclick="happy()">HAPPY</button>
+            <button type="button" onclick="engry()">ENGRY</button>
+            <button type="button" onclick="cry()">CRY</button>
+        </div>
+
+    </div>
+
+    <script>
+        function happy() {
+            document.getElementById("output").src = "image/happy2.png";
+        }
+
+        function engry() {
+            document.getElementById("output").src = "image/engry.jpg";
+        }
+
+        function cry() {
+            document.getElementById("output").src = "image/cry.png";
+        }
+    </script>
+</body>
+
+</html>
